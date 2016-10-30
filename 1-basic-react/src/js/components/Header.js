@@ -3,16 +3,16 @@ import React from "react";
 import Title from "./Header/Title";
 
 export default class Header extends React.Component {
-  handleChange(e) {
+  handleChangeOfHeadery(e) {
     const title = e.target.value;
-    this.props.changeTitle(title);
+    this.props.changeTitleOfLayout(title);
   }
 
   render() {
     return (
       <div>
-        <Title title={this.props.title} />
-        <input value={this.props.title} onChange={this.handleChange.bind(this)} />
+        <Title titleOfTitle={this.props.titleOfHeader} />
+        <input value={this.props.titleOfHeader} onChange={this.handleChangeOfHeadery.bind(this)} />
       </div>
     );
   }
