@@ -19,6 +19,7 @@ export default class Layout extends React.Component {
     return (
       <div>
         <Header changeTitleOfHeader={this.changeTitleOfLayout.bind(this)} titleOfHeader={this.state.title} />
+        <Header changeTitleOfHeader={this.changeTitleOfLayout.bind(this)} titleOfHeader={"MyOtherTitle"} />
         <Footer />
       </div>
     );
