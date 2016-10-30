@@ -5,7 +5,7 @@ import Title from "./Header/Title";
 export default class Header extends React.Component {
   handleChangeOfHeadery(e) {
     const title = e.target.value;
-    this.props.changeTitleOfLayout(title);
+    this.props.changeTitleOfHeader(title);
   }
 
   render() {
