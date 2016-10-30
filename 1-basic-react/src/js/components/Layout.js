@@ -11,8 +11,8 @@ export default class Layout extends React.Component {
     };
   }
 
-  changeTitleOfLayout(title) {
-    this.setState({title});
+  changeTitleOfLayout(some_new_value) {
+    this.setState({title: some_new_value});
   }
 
   render() {
